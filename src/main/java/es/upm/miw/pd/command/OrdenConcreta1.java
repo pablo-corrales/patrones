@@ -8,6 +8,11 @@ public class OrdenConcreta1 implements Orden {
     }
 
     @Override
+    public String name() {
+        return "OrdenConcreta1";
+    }
+
+    @Override
     public void ejecutar() {
         this.receptor.accion1();
     }

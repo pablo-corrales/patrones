@@ -10,8 +10,8 @@ public class JButtonInvocador extends JButton implements ActionListener {
 
     private Orden orden;
 
-    public JButtonInvocador(String name, Orden orden) {
-        super(name);
+    public JButtonInvocador(Orden orden) {
+        super(orden.name());
         this.orden = orden;
     }
 
