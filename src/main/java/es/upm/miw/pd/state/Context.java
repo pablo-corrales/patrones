@@ -4,7 +4,7 @@ public class Context {
     private State state;
 
     public Context() {
-        this.state = new StateA();
+        this.setState(new StateA());
     }
 
     protected void setState(State state) {
