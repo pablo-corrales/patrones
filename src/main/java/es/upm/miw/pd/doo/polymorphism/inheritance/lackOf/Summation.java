@@ -17,16 +17,16 @@ public class Summation{
     }
 
     public int sum() {
-        return this.operator1 + this.operator2;
+        return this.getOperator1() + this.getOperator2();
     }
     
     public int multiplicacion() {
-        return this.operator1 * this.operator2;
+        return this.getOperator1() * this.getOperator2();
     }
-
-    @Override
+    
+       @Override
     public String toString() {
-        return "[" + operator1 + "+" + operator2 + "]";
+        return "[" + this.getOperator1() + "+" + this.getOperator2() + "]";
     }
 
 }
