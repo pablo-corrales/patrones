@@ -3,7 +3,7 @@ package es.upm.miw.pd.doo.polymorphism.inheritance.lackOf;
 
 public class Main {
 
-public static void main(String[] args){
+	public static void main(String[] args){
 		
 		OperationsHandler op = new OperationsHandler();
 				
