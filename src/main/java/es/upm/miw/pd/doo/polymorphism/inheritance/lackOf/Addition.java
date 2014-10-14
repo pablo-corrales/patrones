@@ -41,10 +41,10 @@ public class Addition extends Operations{
     	this.setOperador1(op1);
     	this.setOperador2(op2);
     	
-    	this.setResultado(this.getOperador1() - this.getOperador2());
+    	this.setResultado(this.getOperador1() + this.getOperador2());
     
     		    	
-        System.out.println("Sustracción de "+this.getOperador1()+" - "+this.getOperador2()+" = "+this.getResultado());
+        System.out.println("Adición de "+this.getOperador1()+" + "+this.getOperador2()+" = "+this.getResultado());
         
     
     }
