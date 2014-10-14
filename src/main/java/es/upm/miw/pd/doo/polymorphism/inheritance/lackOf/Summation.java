@@ -1,7 +1,7 @@
 package es.upm.miw.pd.doo.polymorphism.inheritance.lackOf;
 
 
-public class Addition extends Operations{
+public class Summation extends Operations{
 	private int operador1;
 	private int operador2;
 	private int resultado;
@@ -37,14 +37,14 @@ public class Addition extends Operations{
 
 	
 
-    public Addition(int op1, int op2) {
+    public Summation(int op1, int op2) {
     	this.setOperador1(op1);
     	this.setOperador2(op2);
     	
     	this.setResultado(this.getOperador1() + this.getOperador2());
     
     		    	
-        System.out.println("Adición de "+this.getOperador1()+" + "+this.getOperador2()+" = "+this.getResultado());
+        System.out.println("Summation de "+this.getOperador1()+" + "+this.getOperador2()+" = "+this.getResultado());
         
     
     }

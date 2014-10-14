@@ -8,8 +8,9 @@ public class Main {
 		
 		OperationsHandler op = new OperationsHandler();
 				
-		op.ejecuta(new Addition(1,2));
+		op.ejecuta(new Summation(1,2));
 		op.ejecuta(new Substraction(4,3));
+		op.ejecuta(new Multiplication(6,5));
 				
 		
 	}
