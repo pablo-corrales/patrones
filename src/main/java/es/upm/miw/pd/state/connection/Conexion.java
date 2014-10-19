@@ -6,10 +6,10 @@ public class Conexion{
 	private Link link;
   
     
-    public Conexion(Link link) {
-    	assert link != null;
+    public Conexion() {
+    	
         this.setEstado(new Cerrado());
-        this.setLink(link);
+        
         
     }
     
