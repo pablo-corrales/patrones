@@ -4,13 +4,13 @@ public class Parado extends Estado {
 
 	@Override
 	public void abrir(Conexion conexion) {
-		// TODO Auto-generated method stub
+		 throw new UnsupportedOperationException("Acción No Permitida");
 
 	}
 
 	@Override
 	public void cerrar(Conexion conexion) {
-		// TODO Auto-generated method stub
+		 throw new UnsupportedOperationException("Acción No Permitida");
 
 	}
 
@@ -22,19 +22,17 @@ public class Parado extends Estado {
 
 	@Override
 	public void iniciar(Conexion conexion) {
-		// TODO Auto-generated method stub
-
+		conexion.setEstado(new Preparado());
 	}
 
 	@Override
 	public void enviar(Conexion conexion, String msg) {
-		// TODO Auto-generated method stub
-
+		 throw new UnsupportedOperationException("Acción No Permitida");
 	}
 
 	@Override
 	public void recibir(Conexion conexion, int respuesta) {
-		// TODO Auto-generated method stub
+		 throw new UnsupportedOperationException("Acción No Permitida");
 
 	}
 

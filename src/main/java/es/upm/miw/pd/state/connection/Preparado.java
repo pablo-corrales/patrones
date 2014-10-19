@@ -28,9 +28,8 @@ public class Preparado extends Estado {
 
 	@Override
 	public void enviar(Conexion conexion, String msg) {
-		conexion.setEstado(new Esperando());
 		conexion.getLink().enviar(conexion, msg);
-	
+		conexion.setEstado(new Esperando());
 	}
 
 	@Override
