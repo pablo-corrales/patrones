@@ -3,8 +3,8 @@ package es.upm.miw.pd.composite.expression;
 import es.upm.miw.pd.composite.expression.Expresion;
 
 public abstract class Operacion extends Expresion {
-    private Expresion operando1;
-    private Expresion operando2;
+	protected Expresion operando1;
+    protected Expresion operando2;
     private char operador;
 
    
