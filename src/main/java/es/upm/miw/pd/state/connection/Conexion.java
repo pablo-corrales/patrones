@@ -32,7 +32,7 @@ public class Conexion{
         this.estado.enviar(this, msg);
     }
 
-    public void recibir(int respuesta) {
+	public void recibir(int respuesta) {
         this.estado.recibir(this,respuesta);
     }
 
@@ -44,4 +44,11 @@ public class Conexion{
         this.estado = estado;
     }
     
+    public Link getLink() {
+		return link;
+	}
+
+	public void setLink(Link link) {
+		this.link = link;
+	}
 }
