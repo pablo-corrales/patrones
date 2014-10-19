@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FactoryReferences {
-	private static FactoryReferences factoryReferences;
+	private static FactoryReferences factoryReferences = null;
     private Map<String, Integer> references;
 
     private int reference;
