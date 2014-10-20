@@ -9,12 +9,17 @@ public class Texto extends Compuesto {
 
 	@Override
 	public void add(Componente componente) {
-		// TODO Auto-generated method stub
+		if (componente.isCompuesto()) {
+			super.getComponente().add(componente);
+		} else {
+				throw new UnsupportedOperationException("Imposible añadir componente");
+		}
 		
 	}
 
 	@Override
 	public String dibujar(Boolean mayusculas) {
+		
 		// TODO Auto-generated method stub
 		return null;
 	}
