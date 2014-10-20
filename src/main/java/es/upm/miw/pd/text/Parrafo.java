@@ -9,14 +9,18 @@ public class Parrafo extends Compuesto{
 	public void add(Componente componente) {
 		if (componente.isCompuesto()) {
 			throw new UnsupportedOperationException("Imposible añadir caracter");
+		} else {
+			super.getComponente().add(componente);
 		}
+			
 			
 	}
 
 	@Override
 	public String dibujar(Boolean mayusculas) {
-		// TODO Auto-generated method stub
-		return null;
+		String parrafoEnMayusculas = dibuja(mayusculas);
+		return parrafoEnMayusculas;
+		
 	}
 
 }
