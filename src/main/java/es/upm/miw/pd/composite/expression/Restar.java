@@ -6,7 +6,7 @@ public class Restar extends Operacion {
 
   
     public Restar(Expresion op1, Expresion op2) {
-        super(op1, '+',op2);
+        super(op1, '-',op2);
     }
     
     
