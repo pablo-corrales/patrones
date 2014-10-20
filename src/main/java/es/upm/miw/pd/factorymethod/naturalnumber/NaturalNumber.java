@@ -24,6 +24,7 @@ public abstract class NaturalNumber {
     }
 
     public String getTextValue() {
+    	
         if (this.value < textValue.length) {
             return textValue[this.value];
         } else {
