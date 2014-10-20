@@ -19,7 +19,7 @@ public class Parrafo extends Compuesto{
 	@Override
 	public String dibujar(Boolean mayusculas) {
 		String parrafoEnMayusculas = dibuja(mayusculas);
-		return parrafoEnMayusculas;
+		return parrafoEnMayusculas += "\n"; 
 		
 	}
 

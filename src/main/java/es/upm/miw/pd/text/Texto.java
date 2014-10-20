@@ -19,9 +19,9 @@ public class Texto extends Compuesto {
 
 	@Override
 	public String dibujar(Boolean mayusculas) {
-		
-		// TODO Auto-generated method stub
-		return null;
+		String textoEnMayusculas = dibuja(mayusculas);
+		textoEnMayusculas += "---o---\n";
+		return textoEnMayusculas;
 	}
 
 }
