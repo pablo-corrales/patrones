@@ -5,6 +5,10 @@ public class NaturalNumberManager {
 	private NaturalNumber naturalNumber;
     private NaturalNumberCreator creator;
     
+    public NaturalNumberManager(){
+    	
+    }
+    
     public void setCreator(NaturalNumberCreator creator) {
         this.creator = creator;
     }
@@ -14,7 +18,7 @@ public class NaturalNumberManager {
     }
 
     public void createNaturalNumber(int num) {
-    	this.naturalNumber = this.creator.createNaturalNumber(num);
+    	this.naturalNumber =  this.creator.createNaturalNumber(num);
     }
 
 	public NaturalNumber getNaturalNumber() {
