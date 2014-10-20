@@ -7,8 +7,10 @@ public class Parrafo extends Compuesto{
 	
 	@Override
 	public void add(Componente componente) {
-		// TODO Auto-generated method stub
-		
+		if (componente.isCompuesto()) {
+			throw new UnsupportedOperationException("Imposible añadir caracter");
+		}
+			
 	}
 
 	@Override
