@@ -1,6 +1,12 @@
 package es.upm.miw.pd.text;
 
 public class Caracter extends Componente{
+	
+	private Character caracter;
+	
+	public Caracter (char caracter){
+		this.caracter = caracter;
+	}
 
 	@Override
 	public void add(Componente componente) {
@@ -10,14 +16,17 @@ public class Caracter extends Componente{
 
 	@Override
 	public String dibujar(Boolean mayusculas) {
-		// TODO Auto-generated method stub
-		return null;
+		if(mayusculas){
+			return caracter.toString().toUpperCase();
+		} else{
+			return caracter.toString();
+		}
 	}
 
 	@Override
 	public Boolean isCompuesto() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return false;
 	}
 
 }

@@ -1,6 +1,11 @@
 package es.upm.miw.pd.text;
 
 public class Texto extends Compuesto {
+	
+	
+	public Texto(){
+		
+	}
 
 	@Override
 	public void add(Componente componente) {
