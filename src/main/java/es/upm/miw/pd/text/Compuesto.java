@@ -13,7 +13,12 @@ public abstract class Compuesto extends Componente {
 
 	
 	public String dibuja(Boolean mayusculas) {
-		return "";
+		String resultado = "";
+		for (Componente componente : componentes) {
+			resultado += componente.dibujar(mayusculas);
+		}
+		return resultado;
+		
 	}
 	
 	@Override

@@ -23,11 +23,14 @@ public class FactoriaCaracter {
 
 	
 	public Caracter get(char c) {
+		Character valchar = Character.valueOf(c);
 		Caracter caracter = caracteres.get(new Character(c));
+		
 		if(caracter == null){
-			caracter = new Caracter(Character.valueOf(c));
-			caracteres.put(Character.valueOf(c), caracter);
+			caracter = new Caracter(valchar);
+			caracteres.put(valchar, caracter);
 		} 
+		
 		return caracter;
 	}
 
